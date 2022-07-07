@@ -42,9 +42,8 @@ form {
 
     input
     &:focus{
-        border-bottom: 2px solid var(--form-focus-color);
+        border-bottom: 2px solid $formFocusColor;
     }
-
     select {
         font-size: $smFont;
         background: local;
@@ -69,7 +68,7 @@ form {
         text-transform: uppercase;
         padding: 0.5rem 1rem 0.5rem 1rem;
         &:hover{
-            background-color: var(--button-hover);
+            background-color: $buttonHoverBg;
             transition: 0.2s;
         }
     }

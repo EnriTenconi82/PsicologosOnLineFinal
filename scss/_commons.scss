@@ -13,7 +13,7 @@ html {
         /* ===== Scrollbar CSS ===== */
         /* Firefox */
     scrollbar-width: none;
-    scrollbar-color: var(--black) var(--black);
+    scrollbar-color: $black $black;
     /* Chrome, Edge, and Safari */
         &::-webkit-scrollbar {
             width: 7px;

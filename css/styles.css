@@ -15,14 +15,14 @@ html {
 
 * {
   font-family: "Titillium Web", sans-serif;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   color: white;
   /* ===== Scrollbar CSS ===== */
   /* Firefox */
   scrollbar-width: none;
-  scrollbar-color: var(--black) var(--black);
+  scrollbar-color: black black;
   /* Chrome, Edge, and Safari */ }
   *::-webkit-scrollbar {
     width: 7px; }
@@ -58,12 +58,12 @@ h1 {
   font-size: 2rem;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
+  margin: 0px;
   padding-top: 1rem;
-  margin: 0 auto;
   text-transform: uppercase; }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.7rem;
   text-align: center;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700; }
@@ -116,7 +116,7 @@ article {
   background: linear-gradient(90deg, #170d2a 1%, #4b2592 50%, #170d2a 99%); }
 
 .headerTitle {
-  font-size: 3.5rem; }
+  font-size: 3.2rem; }
 
 .footerSection {
   padding: 1rem 1rem 0 0;
@@ -191,7 +191,7 @@ article {
 .acordH2 {
   color: white;
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-weight: 500;
   text-align: center;
   padding: 2rem 0 2rem 0; }
@@ -244,7 +244,7 @@ form button {
 
 input
 form:focus {
-  border-bottom: 2px solid var(--form-focus-color); }
+  border-bottom: 2px solid white; }
 
 form select {
   font-size: 1.5rem;
@@ -267,7 +267,7 @@ form .button {
   text-transform: uppercase;
   padding: 0.5rem 1rem 0.5rem 1rem; }
   form .button:hover {
-    background-color: var(--button-hover);
+    background-color: #7a6c95;
     transition: 0.2s; }
 
 form .buttonBlock {
