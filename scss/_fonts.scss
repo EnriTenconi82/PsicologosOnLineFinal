@@ -1,3 +1,14 @@
-p{
-    
-}
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,700;1,400&display=swap');
+
+
+
+$fontFamily:'Titillium Web', sans-serif; //text font
+$titleFont:'Montserrat Alternates', sans-serif;  // titles font
+$smFont:1.5rem; 
+$mdFont:2rem;
+$lFont:2.5rem;
+$xlFont:3rem;
+$xxlFont:3.5rem;
+$bold:700;
+$normal:500;

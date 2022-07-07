@@ -1,5 +1,18 @@
 //globals vat
 
-$mainColor:violet;
-$secondaryColor:red;
-$keyColor:deepPink;
+$containerColor:rgba(10, 10, 10, 0.8);
+
+//footer header button bg color
+$barsBgColor: linear-gradient(90deg, rgba(23,13,42,1) 1%, rgba(75,37,146,1) 50%, rgba(23,13,42,1) 99%);
+//
+$traspBg:rgba(0, 0, 0, 0); //trasp bg nav
+$buttonHoverBg:#7a6c95; // button hover & hamb button color
+$fontColor:white; //text color
+$black:black;
+$cardBgColor: #f4a2e731;     // card color bg
+$cardFontColor:#feffec;      // card  color txt 
+$articleBg:#2b1549f4;           
+$formFocusColor:white;     //form focus
+$bgColorFill:#571a4d;      //form items bg
+$figureBgColor:#1b0d2df4;  //figs bg (gallery)
+$bgImage: url(../img/rosarioMain.webp);

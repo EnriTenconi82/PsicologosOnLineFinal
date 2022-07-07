@@ -1,9 +1,11 @@
-//imports
- @import url(_vars.scss);
- @import url(_fonts.scss);
- @import url(_navBar.scss);
- @import url(_commons.scss);
- @import url(_productos.scss);
- @import url(_footer.scss);
- 
-
+@import "_vars.scss";
+@import "_fonts.scss";
+@import "_keyframes.scss";
+@import "_commons.scss";
+@import "_navBar.scss";
+@import "_headerFooter";
+@import "_indexServicios.scss";
+@import "_terapias.scss";
+@import "_equipo.scss";
+@import "_contacto.scss";
+@import "_mediaQueries.scss";

@@ -1,0 +1,106 @@
+
+html {
+    font-size:62.5%;
+    font-weight: $normal;
+}
+
+* { 
+    font-family: $fontFamily;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    color: $fontColor;
+        /* ===== Scrollbar CSS ===== */
+        /* Firefox */
+    scrollbar-width: none;
+    scrollbar-color: var(--black) var(--black);
+    /* Chrome, Edge, and Safari */
+        &::-webkit-scrollbar {
+            width: 7px;
+    }
+        &::-webkit-scrollbar-track {
+        background: $black;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $black;
+        border-radius: 5px;
+        border: 1px groove white;
+    }
+}
+
+ol, ul {
+    list-style: none; 
+    
+}
+
+//commons
+body{
+    background-image: $bgImage;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: 165px auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 0rem;
+    border-radius: 2rem;
+}
+
+main{
+    display: flex;
+    flex-flow:column;
+    align-items: stretch;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    row-gap: 2rem;
+}
+
+h1{ font-size: $mdFont;
+    font-family: $titleFont;
+    font-weight: $bold;
+    padding-top: 1rem;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+h2{font-size: $xlFont;
+    text-align: center;
+    font-family: $titleFont;
+    font-weight: $bold;
+}
+
+h3{
+    font-weight: $bold;
+    font-size: $lFont;
+    font-family: $titleFont;
+    text-align: center;
+    display: block;
+    padding-bottom: 1rem;
+}
+
+
+.articleBg{
+    background-color:$articleBg;
+}
+
+.cardBg{
+    background-color: $cardBgColor;
+    color: $fontColor;
+}
+
+
+.ownCard {
+    padding: 2rem;
+    border-radius: 1.5rem;
+    column-gap: 4rem;
+    row-gap: 2rem;
+    width: 100%;
+    max-width: 1440px;
+}
+
+
+article{
+    font-size: $mdFont;
+    line-height: 3rem;
+}
+
+

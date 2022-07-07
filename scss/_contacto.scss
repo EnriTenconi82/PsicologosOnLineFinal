@@ -1,0 +1,79 @@
+/* CSS contacto.html */
+    
+.ownForm{
+    max-width: 820px;
+}
+
+
+.formBlock{ 
+    min-width: 10rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content:flex-start;
+    
+}
+/* CSS radio positioning*/
+
+.labelRadio,label{
+    display: inline-block;
+    width: 14rem;
+    vertical-align:top;
+    font-weight: $bold;
+    font-style: $titleFont;
+}
+
+
+.radioLabelSub{
+    width: 6rem;
+    font-weight:$normal ;
+}
+
+form {
+    input,
+    button{
+        background: none;
+        font-size: 1.5rem;
+        vertical-align: middle;
+        border: none;
+        border-bottom: 2px solid $cardBgColor;
+        outline: none;
+    }
+
+    input
+    &:focus{
+        border-bottom: 2px solid var(--form-focus-color);
+    }
+
+    select {
+        font-size: $smFont;
+        background: local;
+        background-color: $bgColorFill;
+        option{
+            background-color:  $bgColorFill;
+        }
+        
+    }
+    textarea{
+        background: none;
+        vertical-align: middle;
+        outline: none;
+        border: 2px solid $cardBgColor;
+    }
+
+    .button{
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        margin-left: 3rem;
+        border: none;
+        text-transform: uppercase;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        &:hover{
+            background-color: var(--button-hover);
+            transition: 0.2s;
+        }
+    }
+    .buttonBlock{
+        text-align: left;
+    }
+}
