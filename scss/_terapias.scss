@@ -1,11 +1,16 @@
 /* bootstrap acordion tuning terapias.html*/
-.acordH2{
+.accordH3{
     color: $fontColor;
     font-family: $titleFont;
-    font-size:$xlFont;
+    font-size:$mdFont;
     font-weight: $normal;
     text-align: center;
     padding: 2rem 0 2rem 0;
 
 }
 
+.accordion-button{
+    &:not(.collapsed){
+        color:$accordActive;
+    }
+}

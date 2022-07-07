@@ -9,10 +9,6 @@
   100% {
     transform: translateY(0.9); } }
 
-html {
-  font-size: 62.5%;
-  font-weight: 500; }
-
 * {
   font-family: "Titillium Web", sans-serif;
   margin: 0;
@@ -22,7 +18,7 @@ html {
   /* ===== Scrollbar CSS ===== */
   /* Firefox */
   scrollbar-width: none;
-  scrollbar-color: var(--black) var(--black);
+  scrollbar-color: black black;
   /* Chrome, Edge, and Safari */ }
   *::-webkit-scrollbar {
     width: 7px; }
@@ -33,8 +29,9 @@ html {
     border-radius: 5px;
     border: 1px groove white; }
 
-ol, ul {
-  list-style: none; }
+html {
+  font-size: 62.5%;
+  font-weight: 500; }
 
 body {
   background-image: url(../img/rosarioMain.webp);
@@ -54,6 +51,30 @@ main {
   margin-bottom: 2rem;
   row-gap: 2rem; }
 
+ol, ul {
+  list-style: none; }
+
+/* globals classes  */
+.articleBg {
+  background-color: #2b1549f4; }
+
+.cardBg {
+  background-color: #f4a2e731;
+  color: white; }
+
+.ownCard {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  column-gap: 4rem;
+  row-gap: 2rem;
+  width: 100%;
+  max-width: 1440px; }
+
+article {
+  font-size: 2rem;
+  line-height: 3rem; }
+
+/* titles h1 ...h4*/
 h1 {
   font-size: 2rem;
   font-family: "Montserrat Alternates", sans-serif;
@@ -76,24 +97,10 @@ h3 {
   display: block;
   padding-bottom: 1rem; }
 
-.articleBg {
-  background-color: #2b1549f4; }
-
-.cardBg {
-  background-color: #f4a2e731;
-  color: white; }
-
-.ownCard {
-  padding: 2rem;
-  border-radius: 1.5rem;
-  column-gap: 4rem;
-  row-gap: 2rem;
-  width: 100%;
-  max-width: 1440px; }
-
-article {
-  font-size: 2rem;
-  line-height: 3rem; }
+h4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1rem;
+  font-weight: 700; }
 
 /* Bootstrap Nav tuning */
 .nav-item {
@@ -128,7 +135,8 @@ article {
   .footerSection ul li {
     display: inline-block;
     padding: 0 1.5rem 0 1rem;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    /*font-size:$xxsFont in _mediaQueries*/ }
   .footerSection img {
     vertical-align: middle; }
 
@@ -162,6 +170,7 @@ article {
 
 .imgProceso {
   width: 300px;
+  /* width:100% in _mediaQueries*/
   vertical-align: middle;
   border-radius: 2rem; }
 
@@ -188,14 +197,18 @@ article {
     border-radius: 2rem; }
 
 /* bootstrap acordion tuning terapias.html*/
-.acordH2 {
+.accordH3 {
   color: white;
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
   text-align: center;
   padding: 2rem 0 2rem 0; }
 
+.accordion-button:not(.collapsed) {
+  color: #c3c4ba; }
+
+/*equipos.html */
 .photo {
   width: 200px;
   height: 200px;
@@ -205,8 +218,6 @@ article {
   min-width: 180px;
   max-width: 700px;
   text-align: left; }
-  .teamPresentation h4 {
-    font-style: "Montserrat Alternates", sans-serif; }
   .teamPresentation li {
     padding-bottom: 2rem; }
 
@@ -244,11 +255,10 @@ form button {
 
 input
 form:focus {
-  border-bottom: 2px solid var(--form-focus-color); }
+  border-bottom: 2px solid white; }
 
 form select {
   font-size: 1.5rem;
-  background: local;
   background-color: #571a4d; }
   form select option {
     background-color: #571a4d; }
@@ -267,7 +277,7 @@ form .button {
   text-transform: uppercase;
   padding: 0.5rem 1rem 0.5rem 1rem; }
   form .button:hover {
-    background-color: var(--button-hover);
+    background-color: #7a6c95;
     transition: 0.2s; }
 
 form .buttonBlock {
