@@ -26,14 +26,14 @@
 
 .radioLabelSub{
     width: 6rem;
-    font-weight:$normal ;
+    font-weight:$normal;
 }
 
 form {
     input,
     button{
         background: none;
-        font-size: 1.5rem;
+        font-size: $smFont;
         vertical-align: middle;
         border: none;
         border-bottom: 2px solid $cardBgColor;
@@ -46,7 +46,6 @@ form {
     }
     select {
         font-size: $smFont;
-        background: local;
         background-color: $bgColorFill;
         option{
             background-color:  $bgColorFill;

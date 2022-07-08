@@ -1,19 +1,20 @@
 
-html {
-    font-size:62.5%;
-    font-weight: $normal;
-}
-
 * { 
     font-family: $fontFamily;
-    margin: 0;
+    margin: 0 ;
     padding:0;
     box-sizing: border-box;
     color: $fontColor;
-        /* ===== Scrollbar CSS ===== */
-        /* Firefox */
+
+    /* ===== Scrollbar CSS ===== */
+    /* Firefox */
+    
     scrollbar-width: none;
     scrollbar-color: $black $black;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> alt-history
     /* Chrome, Edge, and Safari */
         &::-webkit-scrollbar {
             width: 7px;
@@ -28,12 +29,11 @@ html {
     }
 }
 
-ol, ul {
-    list-style: none; 
-    
+html {
+    font-size:62.5%;
+    font-weight: $normal;
 }
 
-//commons
 body{
     background-image: $bgImage;
     background-attachment: fixed;
@@ -54,29 +54,12 @@ main{
     row-gap: 2rem;
 }
 
-h1{ font-size: $mdFont;
-    font-family: $titleFont;
-    font-weight: $bold;
-    padding-top: 1rem;
-    margin: 0 auto;
-    text-transform: uppercase;
+ol, ul {
+    list-style: none; 
+    
 }
 
-h2{font-size: $xlFont;
-    text-align: center;
-    font-family: $titleFont;
-    font-weight: $bold;
-}
-
-h3{
-    font-weight: $bold;
-    font-size: $lFont;
-    font-family: $titleFont;
-    text-align: center;
-    display: block;
-    padding-bottom: 1rem;
-}
-
+/* globals classes  */
 
 .articleBg{
     background-color:$articleBg;
@@ -104,3 +87,33 @@ article{
 }
 
 
+//titles 
+
+/* titles h1 ...h4*/
+h1{ font-size: $mdFont;
+    font-family: $titleFont;
+    font-weight: $bold;
+    padding-top: 1rem;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+h2{font-size: $xlFont;
+    text-align: center;
+    font-family: $titleFont;
+    font-weight: $bold;
+}
+
+h3{
+    font-weight: $bold;
+    font-size: $lFont;
+    font-family: $titleFont;
+    text-align: center;
+    display: block;
+    padding-bottom: 1rem;
+}
+h4 {
+    font-family: $titleFont;
+    font-size:$xxsFont;
+    font-weight: $bold;
+}
