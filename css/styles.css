@@ -15,7 +15,7 @@ html {
 
 * {
   font-family: "Titillium Web", sans-serif;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: white;
@@ -58,8 +58,8 @@ h1 {
   font-size: 2rem;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
-  margin: 0px;
   padding-top: 1rem;
+  margin: 0 auto;
   text-transform: uppercase; }
 
 h2 {
