@@ -1,11 +1,8 @@
 /* bootstrap acordion tuning terapias.html*/
 .accordH3{
-    color: $fontColor;
-    font-family: $titleFont;
-    font-size:$mdFont;
-    font-weight: $normal;
-    text-align: center;
+    @extend h3;
     padding: 2rem 0 2rem 0;
+    color: aliceblue;
 
 }
 

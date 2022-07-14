@@ -1,3 +1,5 @@
+/* COMMONS */
+
 
 * { 
     font-family: $fontFamily;
@@ -21,13 +23,14 @@
     &::-webkit-scrollbar-thumb {
         background: $black;
         border-radius: 5px;
-        border: 1px groove white;
+        border: 1px groove $white;
     }
 }
 
 html {
     font-size:62.5%;
     font-weight: $normal;
+    color: $fontColor;
 }
 
 body{
@@ -35,10 +38,6 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    grid-template-columns: 165px auto;
-    grid-template-rows: auto auto auto;
-    column-gap: 0rem;
-    border-radius: 2rem;
 }
 
 main{
@@ -47,7 +46,6 @@ main{
     align-items: stretch;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    row-gap: 2rem;
 }
 
 ol, ul {
@@ -59,6 +57,7 @@ ol, ul {
 
 .articleBg{
     background-color:$articleBg;
+    border-radius: $globalRadius;
 }
 
 .cardBg{
@@ -69,9 +68,9 @@ ol, ul {
 
 .ownCard {
     padding: 2rem;
-    border-radius: 1.5rem;
-    column-gap: 4rem;
     row-gap: 2rem;
+    column-gap: 4rem;
+    border-radius: $globalRadius;
     width: 100%;
     max-width: 1440px;
 }
@@ -85,31 +84,31 @@ article{
 
 //titles 
 
-/* titles h1 ...h4*/
-h1{ font-size: $mdFont;
-    font-family: $titleFont;
-    font-weight: $bold;
-    padding-top: 1rem;
-    margin: 0 auto;
-    text-transform: uppercase;
+@mixin text($fontFam,$font-size,$weight,$align){
+    font-family: $fontFam;
+    font-size:$font-size;
+    font-weight:$weight;
+    text-align: $align;
 }
 
-h2{font-size: $xlFont;
-    text-align: center;
-    font-family: $titleFont;
-    font-weight: $bold;
+/* titles h1 ...h4*/
+
+h1{ 
+    @include text( $titleFont,$mdFont,$bold,$textCenter);
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+}
+
+h2{
+    @include text($titleFont,$xlFont,$bold,$textCenter);
 }
 
 h3{
-    font-weight: $bold;
-    font-size: $lFont;
-    font-family: $titleFont;
-    text-align: center;
-    display: block;
-    padding-bottom: 1rem;
+    @include text($titleFont,$lFont,$bold,$textCenter);
 }
+
 h4 {
-    font-family: $titleFont;
-    font-size:$xxsFont;
-    font-weight: $bold;
+    @include text($titleFont,$xxsFont,$bold,$textLeft);
+        
 }

@@ -1,20 +1,37 @@
 //globals vat
 
 $containerColor:rgba(10, 10, 10, 0.8);
-
-//footer header button bg color
-$barsBgColor: linear-gradient(90deg, rgba(23,13,42,1) 1%, rgba(75,37,146,1) 50%, rgba(23,13,42,1) 99%);
-//
-$traspBg:rgba(0, 0, 0, 0); //trasp bg nav
-$buttonHoverBg:#7a6c95; // button hover & hamb button color
-$fontColor:white; //text color
-$black:black;
-$white:white;
+$white:rgb(248, 248, 248);
+$black:rgb(8, 8, 8);
+$fontColor:$white; //text color
 $cardBgColor: #f4a2e731;     // card color bg
 $cardFontColor:#feffec;      // card  color txt 
+$textCenter:center;
+$textLeft:left;
 $articleBg:#2b1549f4;     
+$globalRadius:2rem;
 $accordActive:#c3c4ba;
-$formFocusColor:white;     //form focus
-$bgColorFill:#571a4d;      //form items bg
 $figureBgColor:#1b0d2df4;  //figs bg (gallery)
 $bgImage: url(../img/rosarioMain.webp);
+
+
+
+//bars and nav theme
+$barsTheme:(
+    'fontColor':$fontColor,
+    'buttonBg':rgb(90, 72, 124),
+    'buttonHoverBg':#7a6c95,
+    'barsBgColor':linear-gradient(90deg, rgba(23,13,42,1) 1%, rgba(75,37,146,1) 50%, rgba(23,13,42,1) 99%),
+    'taspBg':rgba(0, 0, 0, 0) //trasp bg nav
+    );
+
+
+//form theme
+$formTheme:('butBgCol':rgb(90, 72, 124),
+            'butBgHover':#7a6c95,
+            'focusColor':$white,
+            'fillColor': #571a4d,      
+            'borderColor': #f4a2e731,
+            );
+//
+

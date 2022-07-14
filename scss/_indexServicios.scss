@@ -1,13 +1,14 @@
 /* CSS index.html _ servicios.html*/
+
 .figBenefits{
     background-color: $figureBgColor;
-    border-radius: 2rem;
+    border-radius: $globalRadius;
     padding:1rem;
     text-align: center;
 
     img{
         width: 100%;
-        border-radius: 2rem;
+        border-radius: $globalRadius;
     } 
 
     span{
@@ -30,7 +31,7 @@
     width: 300px;
     /* width:100% in _mediaQueries*/
     vertical-align: middle;
-    border-radius: 2rem;
+    border-radius: $globalRadius;
 }
 
 .servicesText{
@@ -41,7 +42,7 @@
 .mediosPago{
     width: 50%;
     padding: 5rem;
-    border-radius: 20px;
+    border-radius: $globalRadius*10;
 }
 
 .addressList{
@@ -56,6 +57,6 @@
     
     iframe{
         align-self: center;
-        border-radius: 2rem;
+        border-radius: $globalRadius;
     }
 }    

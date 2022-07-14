@@ -29,48 +29,46 @@
     font-weight:$normal;
 }
 
+
 form {
-    input,
-    button{
-        background: none;
-        font-size: $smFont;
-        vertical-align: middle;
-        border: none;
-        border-bottom: 2px solid $cardBgColor;
-        outline: none;
-    }
-
-    input
-    &:focus{
-        border-bottom: 2px solid $formFocusColor;
-    }
-    select {
-        font-size: $smFont;
-        background-color: $bgColorFill;
-        option{
-            background-color:  $bgColorFill;
-        }
-        
-    }
-    textarea{
+    .item{
         background: none;
         vertical-align: middle;
         outline: none;
-        border: 2px solid $cardBgColor;
-    }
-
-    .button{
-        margin-top: 1rem;
         border-radius: 0.5rem;
-        margin-left: 3rem;
+        border-color:map-get($map: $formTheme, $key:borderColor );
+    }
+
+    input{
+        @extend .item;
         border: none;
+        border-bottom: 2px solid map-get($map: $formTheme, $key:borderColor );
+
+        &:focus{
+            border-bottom: 2px solid map-get($map: $formTheme, $key:focusColor );
+        }
+        select {
+            font-size: $smFont;
+            background-color: map-get($map: $formTheme, $key:fillColor);
+            option{
+                background-color: map-get($map: $formTheme, $key:fillColor);
+            }
+            
+        }
+    }
+    
+    .item-button{
+        @extend .item;
+        margin-top: 1rem;
+        margin-left: 3rem;
+        background-color: map-get($map: $formTheme, $key:butBgCol);
         text-transform: uppercase;
         padding: 0.5rem 1rem 0.5rem 1rem;
         &:hover{
-            background-color: $buttonHoverBg;
-            transition: 0.2s;
+            background-color: map-get($map: $formTheme, $key:butBgHover);
         }
     }
+
     .buttonBlock{
         text-align: left;
     }
