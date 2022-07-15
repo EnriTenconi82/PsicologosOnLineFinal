@@ -7820,25 +7820,25 @@ textarea.form-control-lg {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #f8f8f8;
+  color: #fefefe;
   /* ===== Scrollbar CSS ===== */
   /* Firefox */
-  scrollbar-width: none;
-  scrollbar-color: #080808 #080808;
+  scrollbar-width: 3px;
+  scrollbar-color: #080808 #343434;
   /* Chrome, Edge, and Safari */ }
   *::-webkit-scrollbar {
     width: 7px; }
   *::-webkit-scrollbar-track {
-    background: #080808; }
+    background: #343434; }
   *::-webkit-scrollbar-thumb {
     background: #080808;
     border-radius: 5px;
-    border: 1px groove #f8f8f8; }
+    border: 1px groove #fefefe; }
 
 html {
   font-size: 62.5%;
   font-weight: 500;
-  color: #f8f8f8; }
+  color: #fefefe; }
 
 body {
   background-image: url(../img/rosarioMain.webp);
@@ -7864,7 +7864,7 @@ ul {
 
 .cardBg {
   background-color: #f4a2e731;
-  color: #f8f8f8; }
+  color: #fefefe; }
 
 .ownCard {
   padding: 2rem;
@@ -7938,7 +7938,7 @@ h4, .h4 {
   margin-right: 2rem; }
 
 .nav-link {
-  color: #f8f8f8;
+  color: #fefefe;
   font-size: 2rem; }
   .nav-link:hover {
     background-color: #5a487c;
@@ -8004,7 +8004,10 @@ h4, .h4 {
   margin-bottom: 1rem; }
   .mapaContainer iframe {
     align-self: center;
-    border-radius: 2rem; }
+    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+    border: 0; }
 
 /* bootstrap acordion tuning terapias.html*/
 .accordH3 {
@@ -8061,7 +8064,7 @@ form input {
   border: none;
   border-bottom: 2px solid #f4a2e731; }
   form input:focus {
-    border-bottom: 2px solid #f8f8f8; }
+    border-bottom: 2px solid #fefefe; }
   form input select {
     font-size: 1.5rem;
     background-color: #571a4d; }

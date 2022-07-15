@@ -115,17 +115,19 @@ p {
   margin-top: 0;
   margin-bottom: 1rem; }
 
-
+ol,
 ul {
   padding-left: 2rem; }
 
-
+ol,
 ul {
   margin-top: 0;
   margin-bottom: 1rem; }
 
-
-ul ul {
+ol ol,
+ul ul,
+ol ul,
+ul ol {
   margin-bottom: 0; }
 
 a {
@@ -144,10 +146,6 @@ figure {
 img,
 svg {
   vertical-align: middle; }
-
-table {
-  caption-side: bottom;
-  border-collapse: collapse; }
 
 label {
   display: inline-block; }
@@ -178,11 +176,13 @@ select {
 
 button,
 [type="button"],
-[type="reset"] {
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button; }
   button:not(:disabled),
   [type="button"]:not(:disabled),
-  [type="reset"]:not(:disabled) {
+  [type="reset"]:not(:disabled),
+  [type="submit"]:not(:disabled) {
     cursor: pointer; }
 
 ::-moz-focus-inner {
@@ -320,28 +320,6 @@ iframe {
   .col-lg-4 {
     flex: 0 0 auto;
     width: 33.33333%; } }
-
-.table {
-  --bs-table-bg: transparent;
-  --bs-table-accent-bg: transparent;
-  --bs-table-striped-color: #212529;
-  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
-  --bs-table-active-color: #212529;
-  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
-  --bs-table-hover-color: #212529;
-  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
-  width: 100%;
-  margin-bottom: 1rem;
-  color: #212529;
-  vertical-align: top;
-  border-color: #dee2e6; }
-  .table > :not(caption) > * > * {
-    padding: 0.5rem 0.5rem;
-    background-color: var(--bs-table-bg);
-    border-bottom-width: 1px;
-    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg); }
-  .table > :not(:first-child) {
-    border-top: 2px solid currentColor; }
 
 .collapse:not(.show) {
   display: none; }
@@ -575,9 +553,6 @@ iframe {
 .d-flex {
   display: flex !important; }
 
-.border {
-  border: 1px solid #dee2e6 !important; }
-
 .flex-row {
   flex-direction: row !important; }
 
@@ -663,25 +638,25 @@ iframe {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #f8f8f8;
+  color: #fefefe;
   /* ===== Scrollbar CSS ===== */
   /* Firefox */
-  scrollbar-width: none;
-  scrollbar-color: #080808 #080808;
+  scrollbar-width: 3px;
+  scrollbar-color: #080808 #343434;
   /* Chrome, Edge, and Safari */ }
   *::-webkit-scrollbar {
     width: 7px; }
   *::-webkit-scrollbar-track {
-    background: #080808; }
+    background: #343434; }
   *::-webkit-scrollbar-thumb {
     background: #080808;
     border-radius: 5px;
-    border: 1px groove #f8f8f8; }
+    border: 1px groove #fefefe; }
 
 html {
   font-size: 62.5%;
   font-weight: 500;
-  color: #f8f8f8; }
+  color: #fefefe; }
 
 body {
   background-image: url(../img/rosarioMain.webp);
@@ -696,7 +671,7 @@ main {
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
-
+ol,
 ul {
   list-style: none; }
 
@@ -707,7 +682,7 @@ ul {
 
 .cardBg {
   background-color: #f4a2e731;
-  color: #f8f8f8; }
+  color: #fefefe; }
 
 .ownCard {
   padding: 2rem;
@@ -779,7 +754,7 @@ h4, .h4 {
   margin-right: 2rem; }
 
 .nav-link {
-  color: #f8f8f8;
+  color: #fefefe;
   font-size: 2rem; }
   .nav-link:hover {
     background-color: #5a487c;
@@ -840,7 +815,10 @@ h4, .h4 {
   margin-bottom: 1rem; }
   .mapaContainer iframe {
     align-self: center;
-    border-radius: 2rem; }
+    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+    border: 0; }
 
 /* bootstrap acordion tuning terapias.html*/
 .accordH3 {
@@ -895,7 +873,7 @@ form input {
   border: none;
   border-bottom: 2px solid #f4a2e731; }
   form input:focus {
-    border-bottom: 2px solid #f8f8f8; }
+    border-bottom: 2px solid #fefefe; }
   form input select {
     font-size: 1.5rem;
     background-color: #571a4d; }

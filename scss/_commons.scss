@@ -10,15 +10,14 @@
 
     /* ===== Scrollbar CSS ===== */
     /* Firefox */
-    
-    scrollbar-width: none;
-    scrollbar-color: $black $black;
+        scrollbar-width: 3px;
+        scrollbar-color: $black $blacky;
     /* Chrome, Edge, and Safari */
         &::-webkit-scrollbar {
             width: 7px;
     }
         &::-webkit-scrollbar-track {
-        background: $black;
+        background: $blacky;
     }
     &::-webkit-scrollbar-thumb {
         background: $black;

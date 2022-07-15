@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactanos - Terapia psicologica on line y presencial en pesos, para hispanohablantes en el mundo desde Rosario Santa Fe Argentina">
+    <meta name="keywords" content="contacto,mail,psicologos,terapia,psicologa, online, barato ,terapia, pesos, argentina, español">
+    <meta name="author" content="Enrico Tenconi">
     <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/minStyles.css">
     <link rel="icon" type="image/x-icon" href="../img/logo.ico" sizes="64x64">
@@ -11,7 +14,7 @@
 </head>
 <body>
     <header class="text-center barsBg">
-        <h1>Psicólogos OnLine Rosario</h1>
+        <h1> Formulario de contacto</h1>
     </header>
     
     <!-- nav bar bootstrap-->
@@ -49,7 +52,7 @@
     
         <article class="articleBg container-md pt-4 py-4  mb-4 px-0 px-sm-4">
 
-        <h2>Formulario de contacto para consulta</h2>
+        <h2>Contáctanos</h2>
             
         <form class="wow animate__zoomIn" action="contacts.php" method="post">
             
@@ -82,14 +85,15 @@
                         <div class="col-sm-6">
                             <div class="formBlock">
                                 <label for="mail">Mail</label>
-                                <input type="email"id="mail" placeholder="example@example.com" required>
+                                <input type="email" id="mail" placeholder="example@example.com" required>
                             </div>
                         </div>
             
                         <div class="col-sm-6">
                             <div class="formBlock">
                                 <label  for="obrasocial">Obra social</label>
-                                <select class="cardBg" name="obrasocial" required>
+                                <select class="cardBg" name="obrasocial" id="obrasocial" required>
+                                    <option value="">Seleccione</option>
                                     <option value="gal">Galeno</option>
                                     <option value="osd">Osde</option>
                                     <option value="pam">Pami</option>
@@ -114,12 +118,12 @@
                                 
                                     <div class="d-inline-block">
                                         <div>
-                                            <input type="radio"  required id="html" name="consulta" value="virtual">
+                                            <input type="radio"  required id="virtual" name="consulta" value="virtual">
                                             <label class="radioLabelSub" for="virtual">Virtual</label>
                                         </div>
 
                                         <div>
-                                            <input type="radio"  required id="consulta" name="consulta" value="presencial">
+                                            <input type="radio"  required id="presencial" name="consulta" value="presencial">
                                             <label class="radioLabelSub" for="presencial">Presencial</label>
                                         </div>    
                                     </div>
@@ -128,8 +132,9 @@
                         
                         <div class="col-sm-6">
                             <div class="formBlock">
-                                <label  for="modalidadrespuesta">Modalidad de Respuesta</label>
-                                    <select class="cardBg" name="modalidadrespuesta"  required>
+                                <label for="modalidadrespuesta">Modalidad de Respuesta</label>
+                                    <select class="cardBg" name="modalidadrespuesta" id="modalidadrespuesta" required>
+                                        <option value="">Seleccione</option>
                                         <option value="Mail">Mail</option>
                                         <option value="Whastapp">Whatsapp</option>
                                         <option value="llamada">Llamada</option>
@@ -149,7 +154,7 @@
             </fieldset>
             
             <div class="buttonBlock">
-                <input class="item-button" type="Submit" name="" id="">
+                <input class="item-button" type="Submit" id="submit">
                 <button class="item-button" type="reset" value="Reset">Borrar</button>
             </div>     
         
