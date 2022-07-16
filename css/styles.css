@@ -7837,8 +7837,7 @@ textarea.form-control-lg {
 
 html {
   font-size: 62.5%;
-  font-weight: 500;
-  color: #fefefe; }
+  font-weight: 500; }
 
 body {
   background-image: url(../img/rosarioMain.webp);
@@ -7863,8 +7862,7 @@ ul {
   border-radius: 2rem; }
 
 .cardBg {
-  background-color: #f4a2e731;
-  color: #fefefe; }
+  background-color: #f4a2e731; }
 
 .ownCard {
   padding: 2rem;
@@ -7919,8 +7917,7 @@ h4, .h4 {
   .footerSection ul li {
     display: inline-block;
     padding: 0 1.5rem 0 1rem;
-    font-size: 1.5rem;
-    /*font-size:$xxsFont in _mediaQueries*/ }
+    font-size: 1.5rem; }
   .footerSection img {
     vertical-align: middle; }
 
@@ -8012,7 +8009,7 @@ h4, .h4 {
 /* bootstrap acordion tuning terapias.html*/
 .accordH3 {
   padding: 2rem 0 2rem 0;
-  color: aliceblue; }
+  color: #fefefe; }
 
 .accordion-button:not(.collapsed) {
   color: #c3c4ba; }
