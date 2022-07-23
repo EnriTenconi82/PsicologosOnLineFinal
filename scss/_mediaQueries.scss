@@ -1,5 +1,12 @@
 
 /*media queries*/
+@media only screen and (max-width: 767px){
+
+body{
+    background-image: $bgImageSm;
+    }
+}
+
 @media only screen and (max-width: 350px){
     
     .imgProceso{

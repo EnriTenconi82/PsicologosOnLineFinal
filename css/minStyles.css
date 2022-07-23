@@ -890,6 +890,10 @@ form .buttonBlock {
   text-align: left; }
 
 /*media queries*/
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url(../img/rosarioMainSm.webp); } }
+
 @media only screen and (max-width: 350px) {
   .imgProceso {
     width: 100%;
